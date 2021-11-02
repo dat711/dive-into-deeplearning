@@ -1,8 +1,8 @@
 import torch
 import random
-
+import torch
 # generate the dataset
-def synthetic_data(weight, bias, num_examples):
+def synthetic_data(weight : torch.tensor, bias : torch.tensor, num_examples):
   """ weight is vector of size (n,) and bias is a number
   """
   X = torch.normal(0,1,(num_examples,len(weight))) # generate X with shape ()
